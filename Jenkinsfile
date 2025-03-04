@@ -39,6 +39,7 @@ pipeline {
                 ok "Done"
                 parameters{
                     choice (name: 'ENV', choices: ['dev', 'stageing', 'production'], description: '')
+                }
             }
             steps {
                  script{
